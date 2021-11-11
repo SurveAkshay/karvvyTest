@@ -15,9 +15,9 @@ const CountrySelector = () => {
         sx={{ width: 400 , m: 'auto' }}
         options={countries}
         autoHighlight
-        defaultValue={currentCountry ? currentCountry : ''}
+        defaultValue={currentCountry?.id ? currentCountry : ''}
         disableClearable
-        getOptionLabel={(option) => option.name}
+        getOptionLabel={(option) => option.name ? option.name : ''}
         renderOption={(props, option) => (
           <Box className="renderCountries" component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
             <img
