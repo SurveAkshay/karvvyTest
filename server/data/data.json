@@ -4,5 +4,39 @@
     "rank": "2",
     "name": "US",
     "image": "http://localhost:8000/static/avatar.png"
+  },
+  {
+    "id": "22e6b38c-9955-418a-b648-a82333ef466b",
+    "rank": "26",
+    "name": "USa",
+    "image": "http://localhost:8000/static/avatar.png"
+  },
+  {
+    "id": "ee979516-0aac-4533-a936-88bfcc43d51a",
+    "rank": "266",
+    "name": "USa1",
+    "image": "http://localhost:8000/static/avatar.png",
+    "continent": "k"
+  },
+  {
+    "id": "847d1b90-d07a-419a-8221-43657716e7a0",
+    "rank": "62",
+    "name": "Asa",
+    "image": "http://localhost:8000/static/rowimg02.png",
+    "continent": " "
+  },
+  {
+    "id": "b2637e8f-d7ec-46df-8f7f-bf8508f386a1",
+    "rank": "625",
+    "name": "Asa4s",
+    "image": "http://localhost:8000/static/rowimg02.png",
+    "continent": " "
+  },
+  {
+    "id": "0ee50099-56f3-44c1-a7f5-90ce21cf06b8",
+    "rank": "9",
+    "name": "India",
+    "image": "http://localhost:8000/static/India.png",
+    "continent": "Asia"
   }
 ]

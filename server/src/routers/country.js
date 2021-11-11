@@ -10,13 +10,18 @@ const capitalizeFirstLetter = require('../utils/capitalizeFirstLetter');
 router.post('/country', singleImageUploadMiddleware.single("image"), async (req, res) => {
     const url = req.protocol + '://' + req.get('host');    
     try {
+        const { name, rank, continent } = req.body;
+        if (!rank || !name || !continent) {
+            return res.status(400).send({success: false, message: 'All fields are required'});
+        }
         fs.readFile("./data/data.json", "utf8", (err, jsonString) => {
-            const { name, rank } = req.body;
+
             let data = {
                 id: uuidv4(),
                 rank,
                 name: capitalizeFirstLetter(name),
-                image: `${url}/static/${req.file.originalname}`
+                image: `${url}/static/${req.file.originalname}`,
+                continent,
             };
             if (err) {
                 if(err.code == 'ENOENT') {
