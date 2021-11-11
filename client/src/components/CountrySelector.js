@@ -19,7 +19,9 @@ const CountrySelector = () => {
         disableClearable
         getOptionLabel={(option) => option.name ? option.name : ''}
         renderOption={(props, option) => (
-          <Box className="renderCountries" component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
+          <Box className="renderCountries" component="li" sx={{
+            color: '#000004 !important',
+            backgroundColor: 'rgb(236 245 252) !important', '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
             <img
               loading="lazy"
               width="20"
